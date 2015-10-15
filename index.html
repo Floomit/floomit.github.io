@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width maximum-scale=1.0">
 		<meta name="viewport" content="width=device-width initial-scale=1.0">
 
-		<title> | FLOOM | Premium flowers with a message </title>
+		<title> | FLOOM | </title>
 
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="https://malsup.github.io/jquery.cycle.lite.js"></script>
@@ -27,8 +27,10 @@
 			}
 
 			body {
-			    background-color: #333;
+			    background-color: #eee;
 			    font-family: 'Circular Std Book';
+			    font-size  : 17px;
+			    letter-spacing: 1px;
 			}
 
 			textarea, input { outline: none; }
@@ -71,11 +73,12 @@
 				margin-top   : -73px;
 
 				z-index: 10;
+				text-align: center;
 			}
 
 			#overlay #logo {
 				width : 288px;
-				height: 54px;
+				max-width: 75vw;
 			}
 
 			#social {
@@ -97,22 +100,24 @@
 			}
 
 			.be-the-first {
-				background-color: #f88d8d;
+				background-color: #eb8484;
 				color           :   white;
 				height          :    45px;
 				width           :    100%;
+				max-width: 75vw;
 				box-sizing      : border-box;
-				font-size       : 15pt;
 				padding         : 10px;
+				padding-top		: 12px;
 				text-align      : center;
 				border-radius   : 4px;
+				margin: 0px auto;
 				margin-top      : 45px;
 
 				cursor: pointer;
 			}
 
 			.be-the-first:hover {
-				background-color: #d44a4a;
+				background-color: #ff9090;
 			}
 
 			#white-overlay {
@@ -154,18 +159,24 @@
 
 				display   : none;
 
+				text-align: center;
+
 			}
 
 			#subscribe input {
+			    font-family: 'Circular Std Book';
+
+			    font-size  : 17px;
+			    letter-spacing: 1px;
+
 				width : 100%;
 				height: 45px;
 
 				text-align: center;
 
-				cursor: pointer;
+				max-width: 75vw;
 
-				font-weight: bold;
-				font-size  : 15px;
+				cursor: pointer;
 
 				margin-bottom: 12px;
 
@@ -316,15 +327,15 @@
 
 	<div id="social">
 		<a href="https://www.facebook.com/FloomOriginal/" target="_blank">
-			<img src="images/facebook-retina.png" />
+			<img src="images/facebook-retina.png"  onmouseover="this.src=' images/facebook-retina-h.png '" onmouseout="this.src=' images/facebook-retina.png '"/>
 		</a>
 
 		<a href="https://instagram.com/floom.it" target="_blank">
-			<img src="images/instagram-retina.png" />
+			<img src="images/instagram-retina.png" onmouseover="this.src=' images/instagram-retina-h.png '" onmouseout="this.src=' images/instagram-retina.png '"/>
 		</a>
 
 		<a href="https://www.pinterest.com/floomit/" target="_blank">
-			<img src="images/pinterest.png" />
+			<img src="images/pinterest.png"  onmouseover="this.src=' images/pinterest-retina-h.png '" onmouseout="this.src=' images/pinterest.png '"/>
 		</a>
 	</div>
 
